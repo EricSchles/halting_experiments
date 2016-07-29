@@ -1,0 +1,8 @@
+import inspect
+
+def find_infinite_loops(function):
+    source_code = ""
+    for line in inspect.getsourcelines(function)[0]:
+        source_code += line
+    
+    
